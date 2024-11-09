@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////(icons)/////////////////////////////////// */
+.icon-cont {
+    direction: rtl;
+}
+
+.icon {
+    z-index: 1;
+    top: 30%;
+    font-size: 48px;
+}
+
+.icon i {
+    opacity: 0.5;
+}
+
+.icon i:hover {
+    opacity: 1;
+}
+
+/* ///////////////////////////////////////////////////////////(navbar)//////////////////////////////////////////////// */
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0D6EFD;
+    border-right: 2px solid rgb(244, 228, 228);
+}
+
+.li-dropdown {
+    margin-top: 2px;
+}
+
+.li-dropdown:hover .leter {
+    font-size: 20px !important;
+    color: #0D6EFD;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: #0D6EFD;
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        opacity: 0.8;
+    }
+}
+
+.li-dropdown .nav-link {
+    display: inline-block;
+    border: 2px solid #0D6EFD;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    width: auto;
+}
+
+/* //////////////////////////////////////////////////////(carousel)//////////////////////////////////////////////////////// */
+.curs-btn:hover {
+    background-color: #0D6EFD !important;
+    border-radius: 20px !important;
+    transition: ease all 0.7s;
+}
+
+.carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////(welcome)////////////////////////////////////////////////// */
+.card-body {
+    padding: 1.5rem;
+}
+
+.bg-dark-subtle {
+    background-color: #cbe4fc !important;
+}
+
+.text-danger-emphasis {
+    color: #0D6EFD !important;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+
+    .text-danger-emphasis {
+        font-size: 1.2rem;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+}
+
+/* //////////////////////////////////////////////////////////(translate)////////////////////////////////////////////////////// */
+.card-body {
+    padding: 1.5rem;
+}
+
+.bg-dark-subtle {
+    background-color: #cbe4fc !important;
+}
+
+.bg-success-subtle {
+    background-color: #cbe4fc !important;
+}
+
+.text-danger-emphasis {
+    color: #0D6EFD !important;
+}
+
+.form-floating textarea {
+    height: 100px;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+
+    .text-danger-emphasis {
+        font-size: 1.2rem;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .bg-dark-subtle,
+    .bg-success-subtle {
+        padding: 1rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////(fixed backgrond)//////////////////////////////// */
+.fixed-background {
+    background-image: url(../images/food5.avif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 48vh;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .fixed-background {
+        height: 30vh;
+    }
+}
+
+/* ////////////////////////////////////////////////////////(popular)////////////////////////////////////////////////// */
+.bg-dark-subtle {
+    background-color: #f8f9fa !important;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.text-danger-emphasis {
+    color: #0D6EFD !important;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .text-danger-emphasis {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-dark-subtle {
+        padding: 1rem;
+    }
+
+    .text-danger-emphasis {
+        font-size: 1.5rem;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////(card imges)////////////////////////////////////////////////////// */
+.card-body {
+    position: relative;
+}
+
+.card-title {
+    margin-right: 1.5rem;
+}
+
+.btn-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.mm::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    background-color: rgba(154, 200, 252, 0.386);
+    transition: 1s;
+}
+
+.mm:hover::after {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.mm::before {
+    position: absolute;
+    content: " ";
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    background-color: rgba(154, 200, 252, 0.386);
+    transition: 1s;
+}
+
+.mm:hover::before {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+@media (max-width: 576px) {
+    .btn-container {
+        position: static;
+        margin-top: -2rem;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+}
+
+/* /////////////////////////////////////////////////////////(fixed backgrond2)//////////////////////////////// */
+.fixed-background2 {
+    background-image: url(../images/food2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 48vh;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .fixed-background2 {
+        height: 30vh;
+    }
+}
+
+/* /////////////////////////////////////////////////////////(thanks for)/////////////////////////////////////////////////// */
+.bg-dark-subtle {
+    background-color: #f8f9fa !important;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.text-danger-emphasis {
+    color: #0D6EFD !important;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .text-danger-emphasis {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-dark-subtle {
+        padding: 1rem;
+    }
+
+    .text-danger-emphasis {
+        font-size: 1.5rem;
+    }
+}
+
+/* ////////////////////////////////////////////////////(appreciation)/////////////////////////////////////////////////////// */
+.custom-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    background-image: url(../images/osama.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.uuu {
+    background-image: url(../images/mona.jpg);
+}
+
+.iii {
+    background-image: url(../images/fatma.jpeg);
+}
+
+.card-img-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 80px;
+}
+
+.custom-card:hover {
+    transform: scale(0.9);
+    transition: 0.25s;
+}
+
+.custom-card:hover .card-img-overlay {
+    padding-top: 27px;
+    transition: 0.25s;
+}
+
+.qq {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+}
+
+.qq p {
+    margin-top: 1rem;
+    text-align: start;
+}
+
+@media (max-width: 576px) {
+    .custom-card {
+        height: 350px;
+    }
+
+    .custom-card img {
+        width: 50px;
+        height: 70px;
+    }
+}
+
+/* ////////////////////////////////////////////////////(egypt news1)////////////////////////////////////////////////////////// */
+.podcast-page {
+    direction: rtl;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(96, 130, 232, 0.5);
+    margin-top: 20px;
+}
+
+.podcast-image {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.podcast-page:hover .podcast-image {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.zz {
+    position: relative;
+    direction: ltr;
+}
+
+.eee {
+    font-size: 10px;
+}
+
+.line {
+    width: 0px;
+    height: 2.8px;
+    transition: 0.5s;
+}
+
+.podcast-page:hover .line {
+    width: 85px;
+    transition: 0.5s;
+}
+
+.vvv {
+    margin-top: 80px;
+}
+
+span {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .podcast-page {
+        padding: 1rem;
+        margin-top: 10px;
+    }
+
+    .podcast-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .vvv {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+    }
+
+    .vvv span {
+        text-align: center;
+    }
+
+    .zz p {
+        font-size: 0.9rem;
+    }
+
+    .zz h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .podcast-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* ///////////////////////////////////////////////////(egypt news2)///////////////////////////////////////////////////////// */
+.podcast-page2 {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(96, 130, 232, 0.5);
+    margin-top: 20px;
+}
+
+.podcast-image2 {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.podcast-page2:hover .podcast-image2 {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.zz2 {
+    position: relative;
+    direction: ltr;
+}
+
+.eee2 {
+    font-size: 10px;
+}
+
+.line2 {
+    width: 0px;
+    height: 2.8px;
+    transition: 0.5s;
+}
+
+.podcast-page2:hover .line2 {
+    width: 85px;
+    transition: 0.5s;
+}
+
+.vvv2 {
+    margin-top: 80px;
+}
+
+span {
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .podcast-page2 {
+        padding: 1rem;
+        margin-top: 10px;
+    }
+
+    .podcast-image2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .vvv2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+    }
+
+    .vvv2 span {
+        text-align: center;
+    }
+
+    .zz2 p {
+        font-size: 0.9rem;
+    }
+
+    .zz2 h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .podcast-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* //////////////////////////////////////(card photo)/////////////////////////////////////////////////////////// */
+.backgrond-icon {
+    width: 50px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.img1-footer {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/food.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Egyption Food</title>
+</head>
+
+<body>
+    <!--////////////////////////////////////////////////(icons)//////////////////////////////////////////////  -->
+    <div class="icon-cont position-relative me-3">
+        <div class="icon row position-fixed text-primary">
+            <i class="my-4 fab fa-facebook-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+            <i class="my-4 fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="my-4 fab fa-instagram-square"></i>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////(navbar)////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <img src="images/food.jpg" width="60" height="60" class="rounded-circle mx-4 shadow-sm">
+            <a class="navbar-brand fw-bold fs-4 p-2" href="#">EGYPT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown li-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="leter fs-6">S</span>ections
+                        </a>
+                        <ul class="dropdown-menu bg-light">
+                            <li><a class="dropdown-item" href="#">Main Dishes</a></li>
+                            <li><a class="dropdown-item" href="#">Traditional Food</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Salads</a></li>
+                            <li><a class="dropdown-item" href="#">Soups</a></li>
+                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                            <li><a class="dropdown-item" href="#">more</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">About</a>
+                    </li>
+                </ul>
+                <form class="d-block d-lg-flex" role="search">
+                    <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary mx-2 mt-2 mt-lg-0" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline-primary mx-2 mt-2 mt-lg-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////////////////////////(login form)//////////////////////////////////////////////////// -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close bg-body-secondary" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-primary">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label text-primary">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label text-primary" for="rememberMe">Remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button class="btn btn-secondary curs-btn border-0" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary curs-btn border-0">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////(imge carousel )/////////////////////////////////////////////////////// -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                style="width: 20px; height: 20px; background-color: #0D6EFD" data-bs-slide-to="0"
+                class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                style="width: 20px; height: 20px; background-color: #0D6EFD" data-bs-slide-to="1" class="rounded-circle"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                style="width: 20px; height: 20px; background-color: #0D6EFD" data-bs-slide-to="2" class="rounded-circle"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/food5.avif" class="d-block w-100" style="height: 100vh;">
+                <div class="carousel-caption d-md-block px-5 rounded mb-5"
+                    style="background-color: #ffffff !important; opacity:0.7">
+                    <h2 class="text-primary">Welcome To Our Website</h2>
+                    <We class="py-2 text-dark">We wish you a pleasant visit, and we hope to see you again.</p>
+                        <button class="btn btn-dark curs-btn border-0">Firsty</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/food4.jpg" class="d-block w-100" style="height: 100vh;">
+                <div class="carousel-caption d-md-block px-5 rounded mb-5"
+                    style="background-color:#ffffff !important; opacity:0.7">
+                    <h2 class="text-primary">Welcome Here</h2>
+                    <p class="py-2 text-dark">We welcome you to our world filled with delicious flavors and unique
+                        cooking experiences.</p>
+                    <button class="btn btn-dark curs-btn border-0"> Secondary</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/food2.jpg" class="d-block w-100" style="height: 100vh;">
+                <div class="carousel-caption d-md-block px-5 rounded mb-5"
+                    style="background-color: #ffffff !important; opacity:0.7">
+                    <h2 class="text-primary">We Offer You Our Service</h2>
+                    <p class="py-2 text-dark">We are pleased to host you here and hope you enjoy your
+                        experience with us.</p>
+                    <button class="btn btn-dark curs-btn border-0">Third</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <i class="fas fa-angle-double-left fs-2" style="color: #0D6EFD !important;"></i>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <i class="fas fa-angle-double-right fs-2" style="color: #0D6EFD !important;"></i>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- //////////////////////////////////////////////////(welcome)////////////////////////////////////////////////////// -->
+    <div class="card">
+        <div class="card-body">
+            <h3 class="text-danger-emphasis">About Our Website</h3>
+            <p>Welcome to our website, dedicated to food lovers! We offer a wide variety of delicious recipes from
+                various international cuisines, including main dishes, appetizers, and desserts. Our goal is to inspire
+                you with new ideas to prepare tasty and creative meals that suit all tastes and occasions. Whether you
+                are a professional chef or a beginner, you’ll find easy and detailed recipes that make cooking an
+                enjoyable and simple experience. Join us to explore the world of food and discover new flavors!</p>
+            <button class="btn btn-secondary curs-btn border-0">Learn More</button>
+        </div>
+        <hr>
+        <div class="bg-dark-subtle p-4">
+            <h3 class="text-danger-emphasis text-center p-4">Popular Dishes in Egypt</h3>
+        </div>
+        <div style="background-color: #CBE4FC !important;"  class="accordion accordion-flush py-3" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow bg-body-tertiary" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        <span class="fw-bold text-secondary text-uppercase fs-5">Stuffed Vegetables</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Mahshi is a traditional dish in many Arab cuisines made from vegetables such as zucchini,
+                        eggplant, and peppers, stuffed with rice, meat, and spices, and cooked in tomato
+                        sauce until tender.
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #CBE4FC;" class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow bg-body-tertiary" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        <span class="fw-bold text-secondary text-uppercase fs-5">Rice Pudding</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Rice pudding is a popular dessert in many cultures, made from rice cooked in milk with sugar,
+                        often flavored with ingredients like cinnamon or vanilla and topped with nuts or coconut.
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #CBE4FC;" class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow bg-body-tertiary" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        <span class="fw-bold text-secondary text-uppercase fs-5">Vegetable Salad</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Vegetable salad is a healthy and nutritious dish made from a variety of fresh vegetables such as
+                        tomatoes, cucumbers, and carrots, often served with different dressings like olive
+                        oil and vinegar.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////(translate)//////////////////////////////////////////// -->
+    <hr>
+    <div class="bg-dark-subtle mt-2 p-1 rounded">
+        <h3 class="text-danger-emphasis text-center p-4 text-capitalize">Translate from Arabic to English</h3>
+    </div>
+    <div class="card bg-success-subtle px-4">
+        <div class="card-body fs-5">
+            Write And Translate <span style="cursor: pointer;" class="text-primary fs-4">press here</span>
+            <br>
+            <span type="button" class="mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn btn-outline-primary fw-bold shadow" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="click to copy.">copy</button>
+            </span>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-6" id="staticBackdropLabel">good!</h1>
+                        </div>
+                        <div class="modal-body">
+                            تم نسخ النص بنجاح
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Translate: </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="bg-dark-subtle mt-2 p-1 rounded">
+        <h3 class="text-danger-emphasis text-center p-4 text-capitalize">Translate from Arabic to German</h3>
+    </div>
+    <div class="card bg-success-subtle px-4">
+        <div class="card-body fs-5">
+            Write And Translate <span style="cursor: pointer;" class="text-primary fs-4">press here</span>
+            <br>
+            <span type="button" class="mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn btn-outline-primary fw-bold shadow" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="click to copy.">copy</button>
+            </span>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-6" id="staticBackdropLabel">good!</h1>
+                        </div>
+                        <div class="modal-body">
+                            تم نسخ النص بنجاح
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Translate: </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="bg-dark-subtle mt-2 p-1 rounded">
+        <h3 class="text-danger-emphasis text-center p-4 text-capitalize">Translate from Arabic to German</h3>
+    </div>
+    <div class="card bg-success-subtle px-4">
+        <div class="card-body fs-5">
+            Write And Translate <span style="cursor: pointer;" class="text-primary fs-4">press here</span>
+            <br>
+            <span type="button" class="mt-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn btn-outline-primary fw-bold shadow" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                    data-bs-title="click to copy.">copy</button>
+            </span>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-6" id="staticBackdropLabel">good!</h1>
+                        </div>
+                        <div class="modal-body">
+                            تم نسخ النص بنجاح
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Translate: </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- /////////////////////////////////////////////////////////(fixed background)////////////////////////////////////////////////////// -->
+    <div class="fixed-background w-100 rounded">
+    </div>
+    <!-- ///////////////////////////////////////////////////////////(popular in egypt)//////////////////////////////////////////////////// -->
+    <div class="bg-dark-subtle p-2 shadow">
+        <h3 class="text-danger-emphasis text-center p-2 rounded fs-1">Popular dishes in Egypt</h3>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////(card imges)///////////////////////////////////////////////// -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/koshary.jpeg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase">Koshari</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">A mix of rice and lentils.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/molkia.jpeg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase">Molokhia</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3"> Delicious vegetable soup.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/fisikh.jpg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase">Feseekh</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Salted and dried fish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/mahshy.webp" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase"> Mahshi</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Stuffed vegetables with rice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/shawrma.jpg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase"> Shawarma</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Grilled meat with bread.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/pamya.jpg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase"> Bamya</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Okra stew with meat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/fata.jpg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase">Fattah</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Rice with meat and bread.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center mb-4">
+                <div class="mm card shadow">
+                    <img src="images/salta.jpg" style="height: 400px; width: 350px;" class="card-img-top px-3">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline text-uppercase">Vegetable salad</h5>
+                        <div class="btn-container">
+                            <a href="#" class="nn btn btn-primary text-capitalize">Know More</a>
+                        </div>
+                        <p class="card-text mt-3">Fresh mix of vegetables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////(fixed background2)////////////////////////////////////////////////////// -->
+    <div class="fixed-background2 w-100 rounded">
+    </div>
+    <hr>
+    <!-- //////////////////////////////////////////////////////////(thanks for)///////////////////////////////////////////////////// -->
+    <div class="bg-dark-subtle p-2 shadow">
+        <h3 class="text-danger-emphasis text-center p-2 rounded fs-1">Famous Chefs in Egypt</h3>
+    </div>
+    <!-- ///////////////////////////////////////////////////////(appreciation)/////////////////////////////////////////////////////// -->
+    <div class="container mb-5 pb-3">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mt-5">
+                <div class="custom-card rounded-4">
+                    <div class="card-img-overlay rounded-4 px-4">
+                        <h5 class="text-white mt-3">Chef Osama</h5>
+                        <small class="text-white d-block fw-lighter">
+                            <i class="far fa-clock fw-lighter"></i> October 15, 2024
+                        </small>
+                        <div class="position-absolute qq d-flex align-items-start">
+                            <img src="images/osama2.jpg" class="rounded-circle" alt="Director Image">
+                            <p class="text-white fw-lighter ms-2">
+                                One of the most famous chefs in Egypt, known for his television.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mt-5">
+                <div class="custom-card uuu rounded-4">
+                    <div class="card-img-overlay rounded-4 px-4">
+                        <h5 class="text-white mt-3"> Chef Mona Mosly</h5>
+                        <small class="text-white d-block fw-lighter">
+                            <i class="far fa-clock fw-lighter"></i> October 15, 2024
+                        </small>
+                        <div class="position-absolute qq d-flex align-items-start">
+                            <img src="images/mona2.jpg" class="rounded-circle" alt="Director Image">
+                            <p class="text-white fw-lighter ms-1">
+                                A chef and program presenter,she is distinguished by her blend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center mt-5">
+                <div class="custom-card iii rounded-4">
+                    <div class="card-img-overlay rounded-4 px-4">
+                        <h5 class="text-white mt-3"> Chef Fatma Abu Hati</h5>
+                        <small class="text-white d-block fw-lighter">
+                            <i class="far fa-clock fw-lighter"></i> October 15, 2024
+                        </small>
+                        <div class="position-absolute qq d-flex align-items-start">
+                            <img src="images/fatma2.jpeg" class="rounded-circle" alt="Director Image">
+                            <p class="text-white fw-lighter ms-3">
+                                A well-known chef on social media she offers easy and delicious.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- //////////////////////////////////////////////////////////(egypt news1)////////////////////////////////////////////////// -->
+    <div class="container">
+        <h2 class="text-center text-primary fw-bold">
+            FAMOUS EYGPTION DESSERTS</h2>
+        <div class="podcast-page position-relative">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="images/knafa.jpg" alt="Podcast Image" class="podcast-image img-fluid h-100 rounded">
+                </div>
+                <div class="col-12 col-md-8 zz p-4">
+                    <h4 class="text-primary">Kunafa</h4>
+                    <small class="eee fw-bold"><i class="fas fa-calendar-alt"></i> Mon. May 25th 2020</small>
+                    <div class="line bg-primary mt-1"></div>
+                    <p class="pt-1">A dessert made from thin strands of knafeh, typically filled with akawi cheese or
+                        cream, then baked and soaked in syrup. Preheat the oven to 180°C (350°F). Rub the knafeh strands
+                        with melted butter until well-coated. Place half of the knafeh in a greased pan, then add the
+                        cheese or cream on top. Cover the filling with the remaining knafeh and press gently. Bake for
+                        30-40 minutes until golden brown. Finally, remove from the oven and pour hot syrup over it,
+                        garnishing with crushed pistachios.</p>
+                    <div class="vvv">
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-tag"></i> podcast</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-clock"></i> 55 mins</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-play"></i> play Episode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////(egypt news2)////////////////////////////////////////////////// -->
+    <div class="container">
+        <div class="podcast-page2 position-relative">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="images/pklawa.jpg" alt="Podcast Image" class="podcast-image2 img-fluid h-100 rounded">
+                </div>
+                <div class="col-12 col-md-8 zz2 p-4">
+                    <h4 class="text-primary">Baklava</h4>
+                    <small class="eee2 fw-bold"><i class="fas fa-calendar-alt"></i> Mon. May 25th 2020</small>
+                    <div class="line2 bg-primary mt-1"></div>
+                    <p class="pt-1">A rich dessert made of thin layers of phyllo dough filled with nuts, soaked in
+                        syrup. Preheat the oven to 180°C (350°F). Grease a baking dish with melted butter. Place a layer
+                        of phyllo dough in the dish and brush with butter. Repeat this process with several layers of
+                        phyllo. Sprinkle ground nuts mixed with cinnamon on top. Add more layers of phyllo on top and
+                        cut into squares. Bake for 30-40 minutes until golden. Remove from the oven and fill it with hot
+                        syrup.</p>
+                    <div class="vvv2">
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-tag"></i> podcast</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-clock"></i> 55 mins</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-play"></i> play Episode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////(egypt news3)////////////////////////////////////////////////// -->
+    <div class="container">
+        <div class="podcast-page position-relative">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="images/kataif.webp" alt="Podcast Image" class="podcast-image img-fluid h-100 rounded">
+                </div>
+                <div class="col-12 col-md-8 zz p-4">
+                    <h4 class="text-primary"> Qatayef</h4>
+                    <small class="eee fw-bold"><i class="fas fa-calendar-alt"></i> Mon. May 25th 2020</small>
+                    <div class="line bg-primary mt-1"></div>
+                    <p class="pt-1">Pancakes stuffed with cream or nuts, either fried or baked and soaked in syrup. Mix
+                        flour, yeast, and sugar in a bowl. Gradually add water and mix until you have a smooth batter.
+                        Heat a pan over medium heat, then pour a portion of the batter to form a circle. Cook until
+                        bubbles appear on the surface, then let it cool. Stuff the pancakes with cream or nuts, fold
+                        them, and fry in oil until golden. Finally, soak them in hot syrup and serve.</p>
+                    <div class="vvv">
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-tag"></i> podcast</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-clock"></i> 55 mins</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-play"></i> play Episode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////(egypt news4)////////////////////////////////////////////////// -->
+    <div class="container">
+        <div class="podcast-page2 position-relative">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="images/smidia.jpg" alt="Podcast Image" class="podcast-image2 img-fluid h-100 rounded">
+                </div>
+                <div class="col-12 col-md-8 zz2 p-4">
+                    <h4 class="text-primary">Semidiyya</h4>
+                    <small class="eee2 fw-bold"><i class="fas fa-calendar-alt"></i> Mon. May 25th 2020</small>
+                    <div class="line2 bg-primary mt-1"></div>
+                    <p class="pt-2">A light dessert made from semolina and sugar, cooked until golden brown. In a pot,
+                        heat the oil and then add the semolina, stirring until golden. In another pot, mix sugar, water,
+                        and cardamom, and bring to a boil. Add the hot syrup to the semolina while stirring
+                        continuously. Let it cook until it thickens, then pour into a dish and cut into squares. Serve
+                        with syrup.</p>
+                    <div class="vvv2">
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-tag"></i> podcast</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-clock"></i> 55 mins</span>
+                        <span class="p-2 rounded bg-primary-subtle"><i class="fas fa-play"></i> play Episode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////(icons photo)////////////////////////////////////////////////// -->
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center text-primary mt-4 fw-bold">CONTACT US</h2>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center mt-4">
+                <div class="card border-0 shadow" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ms-3 mb-3">Subscribe Now</h5>
+                        <div class="backgrond-icon mx-auto rounded-3 bg-black text-center p-1 shadow">
+                            <i class="fab fa-twitter fs-1" style="color: #74C0FC;"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center mt-3">Go To Link</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center mt-4">
+                <div class="card border-0 shadow" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ms-3 mb-3">Follow</h5>
+                        <div class="backgrond-icon mx-auto rounded-3 bg-black text-center p-1 shadow">
+                            <i class="fab fa-whatsapp fs-1" style="color: #63E6BE;"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center mt-3">Go To Link</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center mt-4">
+                <div class="card border-0 shadow" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ms-3 mb-3">Like the Page</h5>
+                        <div class="backgrond-icon mx-auto rounded-3 bg-black text-center p-1 shadow">
+                            <i class="fab fa-instagram fs-1" style="color: #a11b7e;"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center mt-3">Go To Link</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center mt-4">
+                <div class="card border-0 shadow" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ms-3 mb-3">watch Vedios</h5>
+                        <div class="backgrond-icon mx-auto rounded-3 bg-black text-center p-1 shadow">
+                            <i class="fab fa-linkedin-in fs-1" style="color: #74C0FC;"></i>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center mt-3">Go To Link</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////////(footer)/////////////////////////////////////////////////// -->
+    <footer style="background-color: #2e82ffc3;" class="text-white text-center text-lg-start">
+        <div class="p-2">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+                    <div class="d-flex mt-2 border-top border-bottom justify-content-center py-2">
+                        <img src="images/food.jpg" class="img1-footer rounded-circle me-2">
+                        <h5 class="text-uppercase align-content-center">Good Company</h5>
+                    </div>
+                    <p class="mt-3">Phone: 000-000-0000</p>
+                    <p>Address: Egypt</p>
+                    <p>Fax: 000-000-0000</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+                    <div class="d-flex mt-2 border-top border-bottom justify-content-center py-2">
+                        <img src="images/food.jpg" class="img1-footer rounded-circle me-2">
+                        <h5 class="text-uppercase align-content-center">Important Links</h5>
+                    </div>
+                    <p class="mt-3">Visit Us</p>
+                    <p>Take alook</p>
+                    <p>your health is moer important</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+                    <div class="d-flex mt-2 border-top border-bottom justify-content-center py-2">
+                        <img src="images/food.jpg" class="img1-footer rounded-circle me-2">
+                        <h5 class="text-uppercase align-content-center">Vision</h5>
+                    </div>
+                    <p class="mt-3">Serveices for all</p>
+                    <p>Provide best Serveices</p>
+                    <p>you will be better than before</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2023 Good Company. All rights reserved AEbrahim.
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip()
+        })
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>
